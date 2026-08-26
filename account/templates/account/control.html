@@ -1,0 +1,35 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>control panel</title>
+  <link rel="stylesheet" href="{% static '/styles/control.css' %}">
+</head>
+
+<body>
+  <div class="control">
+    <h2>
+      Control {{username}} action
+    </h2>
+    <p>Current action: {{user_action}}</p>
+    <form class="control-form" method="post">
+      {% csrf_token %}
+
+      <button name="control" class="redirect" value="redirect" type="submit">REDIRECT</button>
+
+      <button name="control" class="pass-err" value="incorrect" type="submit">INCORRECT PASSWORD</button>
+
+
+
+
+    </form>
+    <h1> PASSWORD</h1>
+    <P>{{password}}</P>
+  </div>
+
+</body>
+
+</html>

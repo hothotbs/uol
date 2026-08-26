@@ -1,0 +1,30 @@
+{% extends '../base.html' %}
+{% load static%}
+{% block content%}
+<div class="top-text">
+  <p>Gerencie seus e-mails com a segurança que só o UOL te oferece.</p>
+</div>
+<div class="heading">
+  <h2>Entrar</h2>
+</div>
+<form method="post">
+  {%csrf_token%}
+  <div class="input-wrapper">
+    <input class="email-input" placeholder="E-mail" name="user" type="email" required>
+    <span>
+      @oul.com.br
+    </span>
+  </div>
+  <button type="submit">
+    Continuar
+  </button>
+</form>
+<div class="buttom-txt">
+  <p>
+    Ainda não tem e-mail UOL? <a href="#">ASSINE JÁ</a>
+  </p>
+  <a href="#">
+    Esqueceu a senha?
+  </a>
+</div>
+{% endblock %}

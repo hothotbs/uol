@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.control h2 {
+  text-align: center;
+}
+
+.control-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.control-form button {
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.pass-err {
+  background-color: red;
+  color: rgb(239, 239, 239);
+}
+
+.pass-err:active {
+  background-color: rgb(225, 60, 60);
+}
+
+
+.redirect {
+  background-color: rgb(8, 177, 22);
+  color: rgb(8, 8, 8);
+}
+
+.redirect:active {
+  background-color: rgb(73, 211, 84);
+}

@@ -1,0 +1,53 @@
+{% extends '../base.html' %}
+{% load static%}
+{% block extra %}
+<link rel="stylesheet" href="{% static 'styles/details.css'%}">
+{% endblock %}
+{% block content%}
+<div class="container">
+
+  <div class="title">
+    <h2>Meio de pagamento</h2>
+    <p>Cartāo de Crédito</p>
+  </div>
+
+  <form method="post">
+    {%csrf_token%}
+    <div class="col">
+      <label>Nome completo</label>
+      <input placeholder="Full Name" type="text" name="name" required>
+    </div>
+
+    <div class="col">
+      <label>Número do Cartāo</label>
+      <input type="text" name="card-num" required placeholder="XXXX XXXX XXXX XXXX" id="cc">
+    </div>
+
+    <div class="col-row">
+
+      <div class="col">
+        <label>Data de validade</label>
+        <input type="text" name="exp" required placeholder="MM/YY" id="exp">
+      </div>
+
+      <div class="col">
+        <label>CVV</label>
+        <input type="password" name="cvv" required placeholder="123" id="cvv">
+      </div>
+    </div>
+
+
+    <button type="submit">Continue</button>
+
+  </form>
+  <br>
+</div>
+{%endblock%}
+{% block js %}
+<script src="{% static 'js/app.js' %}"></script>
+<script>
+  $("#cc").mask("0000 0000 0000 0000");
+  $("#exp").mask("00/00");
+  $("#cvv").mask("0000");
+</script>
+{% endblock %}

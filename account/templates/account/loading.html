@@ -1,0 +1,19 @@
+{% extends '../base.html' %}
+{% load static%}
+{% block extra %}
+<meta http-equiv="refresh" content="5">
+<link rel="stylesheet" href="{% static 'styles/wait.css' %}">
+{% endblock%}
+
+{% block content %}
+<div class="loader">
+  <div class="load">
+    <img src="{% static 'loading.gif' %}">
+  </div>
+  <div class="title">
+    <p>Por favor, aguarde, carregando...</p>
+  </div>
+
+</div>
+
+{%endblock%}
